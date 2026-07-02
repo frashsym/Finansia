@@ -1,0 +1,5 @@
+database, config = Rasya
+navbar, index, assets = Farras
+pages/pemasukan = Rama
+pages/pengeluaran = Dika
+pages/kategori = Ardis
