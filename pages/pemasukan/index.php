@@ -2,7 +2,6 @@
 require_once '../../config/koneksi.php';
 $base = "../../";
 
-// Query pemasukan + join sederhana ke kategori untuk ambil nama kategori
 $query = "SELECT p.*, k.nama_kategori
           FROM pemasukan p
           LEFT JOIN kategori k ON p.id_kategori = k.id_kategori
@@ -25,27 +24,7 @@ $data = mysqli_query($koneksi, $query);
 <div class="container">
     <h3 class="page-title">Data Pemasukan</h3>
 
-    <?php if (isset($_GET['status'])): ?>
-        <?php if ($_GET['status'] == 'sukses'): ?>
-            <div class="alert alert-success alert-dismissible fade show" role="alert">
-                Data pemasukan berhasil disimpan.
-                <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
-            </div>
-        <?php elseif ($_GET['status'] == 'gagal'): ?>
-            <div class="alert alert-danger alert-dismissible fade show" role="alert">
-                Terjadi kesalahan, data gagal disimpan.
-                <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
-            </div>
-        <?php elseif ($_GET['status'] == 'hapus'): ?>
-            <div class="alert alert-warning alert-dismissible fade show" role="alert">
-                Data pemasukan berhasil dihapus.
-                <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
-            </div>
-        <?php endif; ?>
-    <?php endif; ?>
-
     <a href="tambah.php" class="btn btn-success mb-3">+ Tambah Pemasukan</a>
-    <a href="export.php" class="btn btn-outline-success mb-3">Export Excel</a>
 
     <div class="table-responsive">
         <table class="table table-bordered table-hover bg-white">

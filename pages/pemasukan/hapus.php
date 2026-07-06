@@ -5,6 +5,6 @@ $id = intval($_GET['id']);
 
 mysqli_query($koneksi, "DELETE FROM pemasukan WHERE id_pemasukan = $id");
 
-header("Location: index.php?status=hapus");
+header("Location: index.php");
 exit;
 ?>

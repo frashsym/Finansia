@@ -20,25 +20,6 @@ $data = mysqli_query($koneksi, "SELECT * FROM kategori ORDER BY tipe, nama_kateg
 <div class="container">
     <h3 class="page-title">Data Kategori</h3>
 
-    <?php if (isset($_GET['status'])): ?>
-        <?php if ($_GET['status'] == 'sukses'): ?>
-            <div class="alert alert-success alert-dismissible fade show" role="alert">
-                Data kategori berhasil disimpan.
-                <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
-            </div>
-        <?php elseif ($_GET['status'] == 'gagal'): ?>
-            <div class="alert alert-danger alert-dismissible fade show" role="alert">
-                Terjadi kesalahan, data gagal disimpan.
-                <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
-            </div>
-        <?php elseif ($_GET['status'] == 'hapus'): ?>
-            <div class="alert alert-warning alert-dismissible fade show" role="alert">
-                Data kategori berhasil dihapus.
-                <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
-            </div>
-        <?php endif; ?>
-    <?php endif; ?>
-
     <a href="tambah.php" class="btn btn-primary mb-3">+ Tambah Kategori</a>
 
     <div class="table-responsive">

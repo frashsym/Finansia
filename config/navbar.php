@@ -1,11 +1,3 @@
-<?php
-/**
- * Navbar bersama, di-include di semua halaman.
- * Variabel $base harus sudah didefinisikan sebelum include file ini,
- * berisi path relatif menuju folder root project.
- * Contoh: "" untuk index.php di root, "../../" untuk halaman di dalam pages/xxx/
- */
-?>
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-4">
     <div class="container">
         <a class="navbar-brand" href="<?= $base ?>index.php">💰 Catatan Keuangan</a>
