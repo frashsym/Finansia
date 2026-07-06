@@ -5,12 +5,12 @@ $base = "";
 // Ambil total pemasukan
 $query1 = mysqli_query($koneksi, "SELECT SUM(jumlah) AS total FROM pemasukan");
 $row1 = mysqli_fetch_assoc($query1);
-$total_pemasukan = $row1['total'] ? $row1['total'] : 0;
+$total_pemasukan = $row1['total'] ?? 0;
 
 // Ambil total pengeluaran
 $query2 = mysqli_query($koneksi, "SELECT SUM(jumlah) AS total FROM pengeluaran");
 $row2 = mysqli_fetch_assoc($query2);
-$total_pengeluaran = $row2['total'] ? $row2['total'] : 0;
+$total_pengeluaran = $row2['total'] ?? 0;
 
 // Hitung saldo
 $saldo = $total_pemasukan - $total_pengeluaran;
@@ -60,7 +60,7 @@ $saldo = $total_pemasukan - $total_pengeluaran;
         </div>
     </div>
 
-    <div class="row mt-4">
+    <div class="row mt-4 justify-content-center">
         <div class="col-md-6">
             <div class="card-chart">
                 <h6 class="mb-3">Perbandingan Pemasukan vs Pengeluaran</h6>
@@ -69,7 +69,7 @@ $saldo = $total_pemasukan - $total_pengeluaran;
         </div>
     </div>
 
-    <div class="mt-4 mb-5">
+    <div class="mt-4 mb-5 text-center">
         <a href="pages/pemasukan/index.php" class="btn btn-success me-2">Lihat Pemasukan</a>
         <a href="pages/pengeluaran/index.php" class="btn btn-danger me-2">Lihat Pengeluaran</a>
         <a href="pages/kategori/index.php" class="btn btn-secondary">Kelola Kategori</a>

@@ -1,6 +1,7 @@
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-4">
     <div class="container">
-        <a class="navbar-brand" href="<?= $base ?>index.php">💰 Catatan Keuangan</a>
+        <a class="navbar-brand" href="<?= $base ?>index.php">
+            <img src="<?= $base ?>assets/fnsa.png" style="width: 30px; height: 30px;" alt="Logo"> Finansia </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu">
             <span class="navbar-toggler-icon"></span>
         </button>
