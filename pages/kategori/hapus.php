@@ -1,5 +1,5 @@
 <?php
-require_once '../../config/koneksi.php';
+include 'config/koneksi.php';
 
 $id = intval($_GET['id']);
 

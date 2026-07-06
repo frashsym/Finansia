@@ -1,5 +1,5 @@
 <?php
-require_once '../../config/koneksi.php';
+include 'config/koneksi.php';
 $base = "../../";
 
 $data = mysqli_query($koneksi, "SELECT * FROM kategori ORDER BY tipe, nama_kategori");
