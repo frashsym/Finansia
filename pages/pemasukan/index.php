@@ -1,5 +1,6 @@
 <?php
-include 'config/koneksi.php';
+require_once '../../config/koneksi.php';
+$base = "../../";
 
 // Query pemasukan + join sederhana ke kategori untuk ambil nama kategori
 $query = "SELECT p.*, k.nama_kategori

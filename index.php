@@ -1,5 +1,6 @@
 <?php
-include 'config/koneksi.php';
+require_once 'config/koneksi.php';
+$base = "";
 
 // Ambil total pemasukan
 $query1 = mysqli_query($koneksi, "SELECT SUM(jumlah) AS total FROM pemasukan");

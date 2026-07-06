@@ -1,5 +1,5 @@
 <?php
-include 'config/koneksi.php';
+require_once '../../config/koneksi.php';
 $base = "../../";
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {

@@ -1,5 +1,6 @@
 <?php
-include 'config/koneksi.php';
+require_once '../../config/koneksi.php';
+$base = "../../";
 
 $query = "SELECT p.*, k.nama_kategori
           FROM pengeluaran p
