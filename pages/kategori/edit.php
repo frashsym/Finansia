@@ -9,7 +9,7 @@ $query = mysqli_query($koneksi, "SELECT * FROM kategori WHERE id_kategori = $id"
 $row = mysqli_fetch_assoc($query);
 
 if (!$row) {
-    header("Location: index.php?status=gagal");
+    header("Location: index.php");
     exit;
 }
 
@@ -20,10 +20,10 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $updateQuery = "UPDATE kategori SET nama_kategori = '$nama', tipe = '$tipe' WHERE id_kategori = $id";
 
     if (mysqli_query($koneksi, $updateQuery)) {
-        header("Location: index.php?status=sukses");
+        header("Location: index.php");
         exit;
     } else {
-        header("Location: index.php?status=gagal");
+        header("Location: index.php");
         exit;
     }
 }

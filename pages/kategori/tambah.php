@@ -9,10 +9,10 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $query = "INSERT INTO kategori (nama_kategori, tipe) VALUES ('$nama', '$tipe')";
 
     if (mysqli_query($koneksi, $query)) {
-        header("Location: index.php?status=sukses");
+        header("Location: index.php");
         exit;
     } else {
-        header("Location: index.php?status=gagal");
+        header("Location: index.php");
         exit;
     }
 }

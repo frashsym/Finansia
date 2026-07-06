@@ -8,7 +8,7 @@ $query = mysqli_query($koneksi, "SELECT * FROM pemasukan WHERE id_pemasukan = $i
 $row = mysqli_fetch_assoc($query);
 
 if (!$row) {
-    header("Location: index.php?status=gagal");
+    header("Location: index.php");
     exit;
 }
 
@@ -25,10 +25,10 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                      WHERE id_pemasukan = $id";
 
     if (mysqli_query($koneksi, $updateQuery)) {
-        header("Location: index.php?status=sukses");
+        header("Location: index.php");
         exit;
     } else {
-        header("Location: index.php?status=gagal");
+        header("Location: index.php");
         exit;
     }
 }
