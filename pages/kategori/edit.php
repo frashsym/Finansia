@@ -20,7 +20,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $updateQuery = "UPDATE kategori SET nama_kategori = '$nama', tipe = '$tipe' WHERE id_kategori = $id";
 
     if (mysqli_query($koneksi, $updateQuery)) {
-        header("Location: index.php?status=sukses");
+        header("Location: index.php?status=edit");
         exit;
     } else {
         header("Location: index.php?status=gagal");
@@ -61,7 +61,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                     </select>
                 </div>
 
-                <button type="submit" class="btn btn-primary">Update</button>
+                <button type="submit" class="btn btn-warning">Simpan Perubahan</button>
                 <a href="index.php" class="btn btn-secondary">Batal</a>
             </form>
         </div>

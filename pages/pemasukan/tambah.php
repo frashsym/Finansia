@@ -70,7 +70,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                     <textarea name="keterangan" class="form-control" rows="3"></textarea>
                 </div>
 
-                <button type="submit" class="btn btn-success">Simpan</button>
+                <button type="submit" class="btn btn-primary">Simpan</button>
                 <a href="index.php" class="btn btn-secondary">Batal</a>
             </form>
         </div>

@@ -31,7 +31,7 @@ CREATE TABLE `kategori` (
   `id_kategori` int NOT NULL,
   `nama_kategori` varchar(100) NOT NULL,
   `tipe` enum('pemasukan','pengeluaran') NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Dumping data for table `kategori`
@@ -58,7 +58,7 @@ CREATE TABLE `pemasukan` (
   `jumlah` int NOT NULL,
   `keterangan` text,
   `id_kategori` int DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Dumping data for table `pemasukan`
@@ -81,7 +81,7 @@ CREATE TABLE `pengeluaran` (
   `jumlah` int NOT NULL,
   `keterangan` text,
   `id_kategori` int DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Dumping data for table `pengeluaran`

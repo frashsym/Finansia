@@ -31,8 +31,13 @@ $data = mysqli_query($koneksi, "SELECT * FROM kategori ORDER BY tipe, nama_kateg
                 Terjadi kesalahan, data gagal disimpan.
                 <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
             </div>
+            <?php elseif ($_GET['status'] == 'edit'): ?>
+            <div class="alert alert-success alert-dismissible fade show" role="alert">
+                Data kategori berhasil diperbarui.
+                <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+            </div>
         <?php elseif ($_GET['status'] == 'hapus'): ?>
-            <div class="alert alert-warning alert-dismissible fade show" role="alert">
+            <div class="alert alert-danger alert-dismissible fade show" role="alert">
                 Data kategori berhasil dihapus.
                 <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
             </div>

@@ -72,7 +72,7 @@ $saldo = $total_pemasukan - $total_pengeluaran;
     <div class="mt-4 mb-5 text-center">
         <a href="pages/pemasukan/index.php" class="btn btn-success me-2">Lihat Pemasukan</a>
         <a href="pages/pengeluaran/index.php" class="btn btn-danger me-2">Lihat Pengeluaran</a>
-        <a href="pages/kategori/index.php" class="btn btn-secondary">Kelola Kategori</a>
+        <a href="pages/kategori/index.php" class="btn btn-primary">Kelola Kategori</a>
     </div>
 </div>
 
