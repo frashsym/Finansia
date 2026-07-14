@@ -8,7 +8,7 @@ $data = mysqli_query($koneksi, "SELECT * FROM kategori ORDER BY tipe, nama_kateg
 <html lang="id">
 <head>
     <meta charset="UTF-8">
-    <title>Kategori - Catatan Keuangan</title>
+    <title>Kategori - Finansia</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="<?= $base ?>assets/css/style.css" rel="stylesheet">
